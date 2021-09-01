@@ -8,10 +8,11 @@ const loadbooks = () => {
   .then(data => displayBooks(data.docs))
   searchText.value = '';
 }
+// load books function --------------------
 loadbooks()
 const displayBooks = books => {
     const allResult = document.getElementById('all-result');
-    allResult.contains = '';
+    allResult.textContent= '';
     console.log(books.title)
     books.forEach(book => {
         const item = document.createElement('div');
