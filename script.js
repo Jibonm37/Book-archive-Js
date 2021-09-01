@@ -11,6 +11,7 @@ const loadbooks = () => {
 loadbooks()
 const displayBooks = books => {
     const allResult = document.getElementById('all-result');
+    allResult.contains = '';
     console.log(books.title)
     books.forEach(book => {
         const item = document.createElement('div');
@@ -20,9 +21,9 @@ const displayBooks = books => {
                 <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                 
-                <h1 class="card-title">Book Name: ${book.title}</h1>
-                  <h3 class="card-title"> Publish Year:${book.publish_year}</h3>
-                  <h5 class="card-title"> Author Name${book.author_name}</h5>
+                <h1 class="card-title">Book Name:- ${book.title}</h1>
+                  <h3 class="card-title"> Publish Year:- ${book.publish_year}</h3>
+                  <h5 class="card-title"> Author Name :-  ${book.author_name}</h5>
                   
                 </div>
               </div>
