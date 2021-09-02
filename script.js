@@ -5,7 +5,7 @@ const loadbooks = () => {
  
     
     // console.log(searchValue)
-    const url = `http://openlibrary.org/search.json?q=${searchValue}`
+    const url = `https://openlibrary.org/search.json?q=${searchValue}`
     fetch(url)
   .then(response => response.json())
   .then(data => displayBooks(data.docs))
