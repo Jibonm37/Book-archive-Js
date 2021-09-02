@@ -24,8 +24,10 @@ loadbooks()
 // display books function --------------------
 
 const displayBooks = books => {
+  
+  
     const allResult = document.getElementById('all-result');
-    
+  
 
     allResult.textContent= '';
     if(books.length === 0){
@@ -34,7 +36,7 @@ const displayBooks = books => {
     else{
 
 
-      console.log(books.title)
+      
       books?.forEach(book => {
           const item = document.createElement('div');
           item.classList.add('col')
@@ -45,14 +47,15 @@ const displayBooks = books => {
                   
                   <h1 class="card-title">Book Name:- ${book.title}</h1>
                     <h3 class="card-title">First Publish Year:- ${book.first_publish_year}</h3>
-                    <h5 class="card-title"> Author Name :-  ${book.author_name}</h5>
+                    <h4 class="card-title"> Author Name :-  ${book.author_name}</h4>
+                    <h5 class="card-title"> Publisher :-  ${book.publisher}</h5>
                     
                   </div>
                 </div>
           
           `
           
-          console.log(book)
+          // console.log(book)
           allResult.appendChild(item);
       })
 
