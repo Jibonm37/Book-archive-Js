@@ -44,7 +44,7 @@ const displayBooks = books => {
                   <div class="card-body">
                   
                   <h1 class="card-title">Book Name:- ${book.title}</h1>
-                    <h3 class="card-title"> Publish Year:- ${book.publish_year}</h3>
+                    <h3 class="card-title">First Publish Year:- ${book.first_publish_year}</h3>
                     <h5 class="card-title"> Author Name :-  ${book.author_name}</h5>
                     
                   </div>
